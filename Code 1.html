@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelBuddy - Travel Booking Site</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #2196F3;
+      padding: 20px;
+    }
+    h1 {
+      color: #ffffff;
+      margin: 0;
+    }
+    main {
+      margin: 20px;
+    }
+    footer {
+      background-color: #2196F3;
+      padding: 10px;
+      text-align: center;
+      color: #ffffff;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    input[type="submit"] {
+      padding: 8px;
+      border-radius: 4px;
+      border: none;
+    }
+    input[type="submit"] {
+      background-color: #2196F3;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #1565C0;
+    }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_T30JI3f00lk5OwYH7Br7wIIkQcFZC2Q&libraries=places"></script>
+  <script>
+    function initializeAutocomplete() {
+      var input = document.getElementById('destination');
+      var options = {
+        types: ['(regions)']
+      };
+      new google.maps.places.Autocomplete(input, options);
+    }
+    google.maps.event.addDomListener(window, 'load', initializeAutocomplete);
+  </script>
+</head>
+<body>
+  <header>
+    <h1>TravelBuddy - Travel Booking Site</h1>
+  </header>
+  <main>
+    <h2>Welcome to TravelBuddy</h2>
+    <p>Start planning your next adventure with us.</p>
+    <form>
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required>
+      <br>
+      <label for="date">Travel Date:</label>
+      <input type="date" id="date" name="date" required>
+      <br>
+      <label for="budget">Budget:</label>
+      <input type="number" id="budget" name="budget" min="0" required>
+      <br>
+      <input type="submit" value="Search">
+    </form>
+  </main>
+  <footer>
+    &copy; 2023 TravelBuddy. All rights reserved.
+  </footer>
+</body>
+</html
