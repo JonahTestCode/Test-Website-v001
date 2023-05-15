@@ -1,0 +1,132 @@
+/* styles.css */
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #2196F3;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #chat-container {
+    border: 1px solid #2196F3;
+    border-radius: 5px;
+    padding: 20px;
+    width: 450px; /* Adjust the width as desired */
+    margin: 0 auto; /* Center the chat box horizontally */
+  }
+  
+  #chat-log {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #chat-log .message {
+    word-wrap: break-word;
+  }
+
+  .message {
+    display: inline-block;
+    max-width: 70%;
+    padding: 8px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .user-message {
+    background-color: #2196F3;
+    color: #ffffff;
+    align-self: flex-end;
+  }
+  
+  .bot-message {
+    background-color: #cccccc;
+    color: #000000;
+    align-self: flex-start;
+  }
+  
+  #user-input {
+    margin-top: 20px;
+  }
+  
+  #message-input {
+    width: 85%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+    overflow: hidden;
+  }
+  
+  #send-button {
+    padding: 8px 15px;
+    background-color: #2196F3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #send-button:hover {
+    background-color: #1565C0;
+  }
+
+  #download-button {
+    padding: 8px 15px;
+    background-color: #2196F3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #download-button:hover {
+    background-color: #1565C0;
+  }
+
+#restart-button {
+  padding: 8px 15px;
+  background-color: #2196F3;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#restart-button:hover {
+  background-color: #1565C0;
+}
+
+.timestamp {
+  color: #999999;
+  font-size: 12px;
+}
+
+#restart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust the margin as desired */
+  }
+  
