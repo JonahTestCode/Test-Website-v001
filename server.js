@@ -60,15 +60,3 @@ messageInput.addEventListener('keydown', (event) => {
     sendButton.click();
   }
 });
-
-// Function to adjust the input field's height based on its content
-function adjustInputHeight() {
-  messageInput.style.height = 'auto';
-  messageInput.style.height = messageInput.scrollHeight + 'px';
-}
-
-// Event listener for input events (e.g., typing)
-messageInput.addEventListener('input', adjustInputHeight);
-
-// Initial adjustment of input field's height on page load
-adjustInputHeight();
